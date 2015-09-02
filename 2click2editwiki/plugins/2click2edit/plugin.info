@@ -1,0 +1,7 @@
+{
+	"title": "$:/plugins/danielo515/2click2edit",
+	"description": "double click to edit tiddlers",
+	"author": "Danielo Rodriguez",
+	"core-version": ">=5.1.0",
+	"list": "readme"
+}
