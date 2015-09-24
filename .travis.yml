@@ -6,7 +6,7 @@ before_script:
 script: tiddlywiki ./*wiki --build
 
 after_success:
-  - bash ./travis/publish.sh
+  - bash ./publish.sh
 
 branches:
   only:
