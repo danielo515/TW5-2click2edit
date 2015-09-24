@@ -6,6 +6,7 @@ before_script:
 script: tiddlywiki ./*wiki --build
 
 after_success: 
+  - chmod +x travis/publish.sh
   - travis/publish.sh
 
 branches:
