@@ -1,6 +1,6 @@
 #!/bin/bash
 # go to the output directory and create a new git repo
-cd output
+cd ../*wiki/output
 git init
 
 # inside this git repo we'll pretend to be a new user
