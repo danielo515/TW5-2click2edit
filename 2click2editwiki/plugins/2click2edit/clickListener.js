@@ -38,6 +38,7 @@ ClickListener.prototype.render = function(parent,nextSibling) {
 
 ClickListener.prototype.editTiddler = function(event) {
 	this.dispatchEvent({type: "tm-edit-tiddler", param: this.getVariable("currentTiddler")});
+    event.preventDefault();
 };
 
 /*
