@@ -5,6 +5,9 @@ before_script:
   - npm install -g tiddlywiki
 script: tiddlywiki ./*wiki --build
 
+after_success: 
+  - travis/publish.sh
+
 branches:
   only:
     - master
