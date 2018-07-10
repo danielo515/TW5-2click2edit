@@ -33,7 +33,7 @@ ClickListener.prototype.render = function(parent,nextSibling) {
 	var self = this;
     /*Since the event listener have been added to the parent, the "this" property is pointing to the
     wrong object, we should call our edit function with our widget object set as the this property.*/
-    parent.addEventListener("dblclick",function(event){self.editTiddler.call(self,event)});
+    parent.addEventListener("click",function(event){if(event.detail === 3 ) self.editTiddler.call(self,event)});
 };
 
 ClickListener.prototype.editTiddler = function(event) {
